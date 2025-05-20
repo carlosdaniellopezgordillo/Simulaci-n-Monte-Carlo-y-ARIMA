@@ -1,67 +1,55 @@
-📊 Dashboard de Pronóstico de Producción Hidroeléctrica
-Este proyecto es un dashboard interactivo creado con Streamlit y Plotly, que utiliza un modelo estadístico ARIMA para pronosticar la producción diaria de energía (MWh) en una planta hidroeléctrica durante los próximos 30 días, basado en datos históricos.
+# 📊 Pronóstico de Producción Hidroeléctrica con ARIMA
 
-🧠 ¿Qué hace esta app?
-📈 Simula 2 años de producción energética diaria (con ruido y estacionalidad)
+Este proyecto es un **dashboard interactivo profesional** creado con [Streamlit](https://streamlit.io/) y [Plotly](https://plotly.com/), que utiliza un modelo estadístico **ARIMA** para predecir la producción diaria de energía (en MWh) en una planta hidroeléctrica durante los próximos 30 días, con base en datos históricos.
 
-🧮 Ajusta un modelo ARIMA para detectar tendencias y estacionalidades
+---
 
-🔮 Realiza un pronóstico de 30 días con intervalos de confianza
+## 📸 Vista previa del dashboard
 
-📊 Visualiza los resultados con una gráfica interactiva de Plotly
+<img src="preview.png" alt="Vista previa del dashboard" width="100%">
 
-🌐 Se despliega como aplicación web con Streamlit
+<!-- 
+👉 Alternativamente, puedes usar un GIF animado:
+<img src="demo.gif" alt="Demo del dashboard en acción" width="100%">
+-->
 
-🛠 Tecnologías utilizadas
-Streamlit – para crear la aplicación web
+---
 
-Plotly – para gráficos interactivos
+## 🧠 ¿Qué hace esta app?
 
-Pandas – para manipulación de datos
+- Simula 2 años de producción energética diaria
+- Ajusta un modelo ARIMA (2,1,2) automáticamente
+- Genera un pronóstico de 30 días con intervalo de confianza
+- Visualiza todo con una gráfica interactiva
+- Se puede desplegar como una app web sin servidores
 
-NumPy – para simulaciones y cálculos
+---
 
-Statsmodels – para el modelo ARIMA
+## 🚀 Cómo ejecutar localmente
 
-📦 Requisitos de instalación
-Primero, asegúrate de tener Python 3.8 o superior. Luego instala los paquetes necesarios con:
+### 1. Clona el repositorio
 
-bash
-Copiar
-Editar
-pip install -r requirements.txt
-🚀 Cómo ejecutar la app localmente
-Clona el repositorio:
-
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/tu-usuario/tu-repo.git
 cd tu-repo
-Instala las dependencias:
 
-bash
-Copiar
-Editar
+## 2. Instala las dependencias
 pip install -r requirements.txt
-Ejecuta la aplicación:
 
-bash
-Copiar
-Editar
+3. Ejecuta la aplicación
 streamlit run app.py
-Se abrirá automáticamente en tu navegador en http://localhost:8501.
+La app se abrirá en tu navegador por defecto (http://localhost:8501)
 
 🌐 Cómo desplegar en Streamlit Cloud
-Sube este repositorio a tu cuenta de GitHub
+Sube este repositorio a GitHub
 
 Ve a Streamlit Cloud
 
 Haz clic en "Deploy an app"
 
-Conecta tu cuenta de GitHub y selecciona este repositorio
+Selecciona el repositorio
 
-Especifica:
+Configura:
 
 Branch: main
 
@@ -69,20 +57,33 @@ Main file path: app.py
 
 Haz clic en Deploy
 
-¡Listo! Tendrás una URL pública para compartir tu app
+Tu app estará disponible en una URL como:
 
-📸 Vista previa del dashboard
-(Agrega una captura de pantalla aquí si gustas)
+arduino
+Copiar
+Editar
+https://nombre-app.streamlit.app
+📦 Requisitos (requirements.txt)
+txt
+Copiar
+Editar
+streamlit
+plotly
+pandas
+numpy
+statsmodels
+✨ Posibles mejoras
+Permitir carga de archivos CSV reales
 
-✨ Ideas para mejorar
-Subir archivos CSV reales en lugar de simular datos
+Ajuste dinámico de parámetros del modelo ARIMA
 
-Ajustar parámetros ARIMA dinámicamente desde la interfaz
+Exportar pronóstico como Excel o CSV
 
-Exportar resultados del pronóstico como archivo CSV o Excel
+Mostrar métricas de precisión (RMSE, MAE)
 
-Integrar alertas si la producción baja de cierto umbral
+Integración con bases de datos externas
 
 🧑‍💻 Autor
-Este proyecto fue creado como parte de un ejercicio de ciencia de datos aplicada a la energía y el pronóstico de series temporales. Ideal para presentaciones profesionales o académicas.
+Este proyecto fue creado como ejercicio académico para demostrar el uso de modelos de series temporales en un entorno visual e interactivo. Ideal para presentaciones o implementaciones en el sector energético.
+
 
